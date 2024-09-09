@@ -4,3 +4,4 @@ Codigo,Nombre,Descripcion,Precio,CantidadEnStock
 003,Balanza,Balanza de precision,1500.0,75
 004,Probeta,Probeta de vidrio,200.0,150
 005,Pipeta,Pipeta graduada,100.0,200
+006,Vortex,Vortex 7000rpm,50000.0,10
