@@ -1,3 +1,6 @@
 Codigo,Nombre,Descripcion,Precio,CantidadEnStock
 001,Microscopio,Microscopio electronico,350000.0,12
 002,Tubo de ensayo,Tubo de ensayo de vidrio,500.0,300
+003,Balanza,Balanza de precision,1500.0,75
+004,Probeta,Probeta de vidrio,200.0,150
+005,Pipeta,Pipeta graduada,100.0,200
