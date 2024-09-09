@@ -16,6 +16,7 @@ public class MenuPrincipal {
     public void mostrarMenu() {
         int opcion;
         do {
+            // Menú principal
             System.out.println("=== Menú Principal ===");
             System.out.println("1. Agregar Producto");
             System.out.println("2. Eliminar Producto");
@@ -52,6 +53,7 @@ public class MenuPrincipal {
         } while (opcion != 6);
     }
 
+    // Método para agregar un producto al inventario
     private void agregarProducto() {
         System.out.print("Ingrese el código del producto: ");
         String codigo = scanner.nextLine();
@@ -69,12 +71,14 @@ public class MenuPrincipal {
         inventario.agregarProducto(producto);
     }
 
+    // Método para eliminar un producto del inventario
     private void eliminarProducto() {
         System.out.print("Ingrese el código del producto a eliminar: ");
         String codigo = scanner.nextLine();
         inventario.eliminarProducto(codigo);
     }
 
+    // Método para buscar un producto por nombre o descripción
     private void buscarProducto() {
         System.out.print("Ingrese el nombre o descripción del producto: ");
         String termino = scanner.nextLine();
@@ -89,6 +93,7 @@ public class MenuPrincipal {
         }
     }
 
+    // Método para listar todos los productos
     private void listarProductos() {
         List<Producto> productos = inventario.listarTodosLosProductos();
         if (productos.isEmpty()) {
@@ -101,6 +106,7 @@ public class MenuPrincipal {
         }
     }
 
+    // Método para generar un informe de inventario
     private void generarInforme() {
         String informe = inventario.generarInformeInventario();
         System.out.println(informe);
